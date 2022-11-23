@@ -1,0 +1,194 @@
+/* HEADER */
+
+header {
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+.hed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    height: 80px;
+
+}
+
+
+.logo {
+    display: block;
+    width: 145px;
+
+
+    margin-right: auto;
+    text-decoration: none;
+    font-family: var(--logo-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+}
+
+.first {
+    color: var(--accent-color);
+}
+
+.last {
+    color: #000000;
+}
+
+.nav {
+    display: flex;
+
+    &.nav-item {
+            display: block;
+    
+        }
+     & > .nav-item:not(:first-child) {
+            margin-left: 50px;
+        }
+    
+}
+
+
+.nav-link {
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    font-weight: 500;
+
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+
+    transition: color var(--trans-fast);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+.link.current {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--accent-color);
+
+    transition: color var(--trans-fast);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+
+}
+
+
+.link-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 340px;
+
+    transition: color var(--trans-fast);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+
+.icon-envelope {
+    display: block;
+    align-self: center;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+
+    transition: fill var(--trans-fast);
+
+        .link-header-mail:hover &,
+        .link-header-mail:focus & {
+            fill: var(--accent-color);
+        }
+}
+
+.icon-smartphone {
+    display: block;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+
+    transition: fill var(--trans-fast);
+
+        .link-header-tel:hover &,
+        .link-header-tel:focus & {
+            fill: var(--accent-color);
+        }
+}
+
+.link-header-mail {
+    display: flex;
+
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+
+    transition: color var(--trans-fast);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.link-header-tel {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    font-weight: 500;
+
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+
+    transition: color var(--trans-fast);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+
+
