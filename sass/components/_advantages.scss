@@ -2,9 +2,17 @@
 
 
 .advantages {
-    padding-top: 94px;
+     padding-top: 94px;
 
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 60px;
+        
+     }
+         @media screen and (min-width: 1200px) {
+             padding-top: 94px;
+         }
 }
+
 
 .visually-hidden {
     visibility: hidden;
@@ -22,7 +30,24 @@
 
 .advantage {
     display: flex;
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+          display: block;  
+          width: 450px;
+        }
+
+    @media screen and (min-width: 768px) {
+            width: 768px;
+            flex-wrap: wrap;
+            
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
 }
+
+ 
+
 
 .advantage__area {
     display: flex;
@@ -33,7 +58,19 @@
     margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
 }
+ 
 
 .advantage__icon {
     display: block;
@@ -55,11 +92,25 @@
 
     text-transform: uppercase;
     color: var(--primary-text-color);
+    
+   
 
     &:not(:last-child) {
             margin-right: 30px;
         }
+
+               
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            
+        }
+                @media screen and (min-width: 1200px) {
+                    width: 270px;
+                }
 }
+
+
 
 
 .advantage__topic {
@@ -73,7 +124,23 @@
     text-transform: uppercase;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+           width: 450px; 
+           text-align: center;
+        }
+
+@media screen and (min-width: 768px) {
+        width: 354px;
+        margin-bottom: 10px;
+    }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
 }
+ 
+ 
+ 
 
 .advantage__text {
 
@@ -82,4 +149,20 @@
     line-height: 1.71;
     text-transform: none;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+            width: 450px;
+        }
+
+@media screen and (min-width: 768px) {
+        width: 354px;
+        margin-bottom: 30px;
+    }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
 }
+
+
+ 
+

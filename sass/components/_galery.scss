@@ -6,6 +6,11 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background: #ffffff;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .visually-hidden {
@@ -26,6 +31,10 @@
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 30px;
+   }
 }
 
 
@@ -111,7 +120,17 @@
     height: 404px;
     background: var(--secondary-color);
 
+    @media screen and (min-width: 480px) and (max-width:767px) {
+            width: 450px;
+            
+        }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        margin: 0;
+    }
 }
+
 
 
 .card-set__meta {
@@ -161,6 +180,18 @@
     width: 370px;
     height: 294px;
     overflow: hidden;
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+            width: 450px;
+            height: 294px;
+        }
+}
+
+.card img {
+    @media screen and (min-width: 480px) and (max-width:767px) {
+        width: 450px;
+        height: 294px;
+    }
 }
 
 .slide {
@@ -181,6 +212,11 @@
     .card-set__link:focus & {
             transform: translateY(-200%) translateY(100%);
         }
+
+                 @media screen and (min-width: 480px) and (max-width:767px) {
+                     width: 450px;
+                     height: 294px;
+                 }
 }
 
 
